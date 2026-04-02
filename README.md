@@ -34,10 +34,22 @@ Start the development server:
 pnpm start
 ```
 
+Or run it from any current shell directory with the repo wrapper:
+
+```bash
+/absolute/path/to/threejs-orbital-glass/run.command
+```
+
 Create a production build:
 
 ```bash
 pnpm build
+```
+
+Or build from anywhere with:
+
+```bash
+/absolute/path/to/threejs-orbital-glass/build.command
 ```
 
 The CRA dev server defaults to:
