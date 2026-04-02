@@ -1,5 +1,5 @@
 <!-- workspace-hub:cover:start -->
-![threejs-orbital-glass cover](.github/assets/cover.png)
+![threejs-orbital-glass cover](cover.png)
 <!-- workspace-hub:cover:end -->
 
 # threejs-orbital-glass
