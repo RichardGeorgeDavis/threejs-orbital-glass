@@ -12,6 +12,7 @@ const INSTANCES_COUNT = 3000;
 function Hero({ settings }) {
     const [width, height] = useThree((state) => [state.size.width, state.size.height]);
     const dpr = useThree((state) => state.viewport.dpr);
+    const assetBasePath = process.env.PUBLIC_URL || '';
     
     const refMesh = useRef(null);
     const sphere1Ref = useRef(null);
@@ -27,10 +28,10 @@ function Hero({ settings }) {
         [],
     );
 
-    const noise = useTexture("/bnoise.png");
+    const noise = useTexture(`${assetBasePath}/bnoise.png`);
     noise.wrapS = THREE.RepeatWrapping;
     noise.wrapT = THREE.RepeatWrapping;
-    const matcap = useTexture("/glass.png");
+    const matcap = useTexture(`${assetBasePath}/glass.png`);
 
     const uniforms = useState(() => (Object.assign({
         u_scale: { value: 0.06 },
