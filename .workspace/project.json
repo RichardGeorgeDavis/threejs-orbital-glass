@@ -1,0 +1,17 @@
+{
+  "name": "Threejs Orbital Glass",
+  "slug": "threejs-orbital-glass",
+  "type": "threejs",
+  "preferredMode": "direct",
+  "packageManager": "pnpm",
+  "devCommand": "pnpm start",
+  "buildCommand": "pnpm build",
+  "previewUrl": "http://127.0.0.1:3000",
+  "tags": [
+    "prototype",
+    "threejs",
+    "react-three-fiber",
+    "webgl"
+  ],
+  "notes": "Create React App based WebGL prototype with shader-driven glass and postprocessing."
+}
